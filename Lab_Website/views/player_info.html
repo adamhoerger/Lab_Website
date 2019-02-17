@@ -41,7 +41,7 @@
 		<div class="row">
 			<div class="col-4">
 				<!-- 
-					Todo: This section will hold a Bootstrap Card containing
+					This section will hold a Bootstrap Card containing
 						   a demo image (temp_image.svg) and a Bootstrap Dropdown menu
 						   to allow the user to select between 3 temp players (switching between
 						   the players will be implemented in a future lab).
@@ -50,10 +50,10 @@
 					<img class="card-img-top" src="../resources/img/cu_boulder_logo.jpg">
 					<div class="card-body">
 						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Select Player
 							</button>
-							<div class="dropdown-menu">
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item">Player 1</a>
 								<a class="dropdown-item">Player 2</a>
 								<a class="dropdown-item">Player 3</a>
@@ -64,7 +64,7 @@
 			</div>
 			<div class="col-8">
 				<!-- 
-					Todo: This section will hold a table with a temp player's information
+					This section will hold a table with a temp player's information
 					
 					|  Year                |  Junior                  |
 					|  Major               |  History                 |
