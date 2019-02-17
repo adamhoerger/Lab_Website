@@ -33,41 +33,81 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<label for="name_input">Full Name:</label>
-			<input type="text" id="name_input" name="name_field" placeholder="Enter Name"><br>
-			<label for="email_input">Email Address:</label>
-			<input type="email" id="email_input" name="email_field" placeholder="Enter Email"><br>
-			<label for="password_input">Password:</label>
-			<input type="password" id="password_input" name="password_field" placeholder="Enter Password"><br>
-			<label for="password_confirm_input">Confirm Password:</label>
-			<input type="password" id="password_confirm_input" name="password_confirm_field" placeholder="Confirm Password"><br>
-			<label for="alumni_input">CU Boulder Alumni</label>
-			<div id="alumni_input">
-				<input type="radio" name="alumni_choice" value="Yes">Yes<br>
-				<input type="radio" name="alumni_choice" value="No">No
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="name_input">Full Name:</label>
+				<div class="col-sm-10">
+					<input class="form-control" type="text" id="name_input" name="name_field" placeholder="Enter Name">
+				</div>
 			</div>
-			<label for="student_input">CU Boulder Student</label>
-			<div id="student_input">
-				<input type="radio" name="student_choice" value="Yes">Yes<br>
-				<input type="radio" name="student_choice" value="No">No
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="email_input">Email Address:</label>
+				<div class="col-sm-10">
+					<input class="form-control" type="email" id="email_input" name="email_field" placeholder="Enter Email">
+				</div>
 			</div>
-			<label for="student_status_input">Student Status</label>
-			<div id="student_status_input">
-				<input type="radio" name="student_status_grad_choice" value="Undergraduate">Undergraduate<br>
-				<select name="student_status_field">
-					<option selected>Pick an Option</option>
-					<option value="Freshman">Freshman</option>
-					<option value="Sophomore">Sophomore</option>
-					<option value="Junior">Junior</option>
-					<option value="Senior">Senior</option> 
-				</select><br>
-				<input type="radio" name="student_status_grad_choice" value="Graduate">Graduate<br>
-				<select name="student_status_field">
-					<option selected>Pick an Option</option>
-					<option value="MA">MA</option>
-					<option value="MBA">MBA</option>
-					<option value="PHD">PHD</option>
-				</select>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="password_input">Password:</label>
+				<div class="col-sm-10">
+					<input class="form-control" type="password" id="password_input" name="password_field" placeholder="Enter Password">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="password_confirm_input">Confirm Password:</label>
+				<div class="col-sm-10">
+					<input class="form-control" type="password" id="password_confirm_input" name="password_confirm_field" placeholder="Confirm Password">
+				</div>
+			</div>
+			<div class="form-group row">
+			<label class="col-sm-2 col-form-label" for="alumni_input">CU Boulder Alumni</label>
+				<div class="col-sm-10" id="alumni_input">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="alumni_choice" id="alumni_input_1" value="Yes">
+						<label class="form-check-label" for="alumni_input_1">Yes</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="alumni_choice" id="alumni_input_2" value="No">
+						<label class="form-check-label" for="alumni_input_2">No</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="student_input">CU Boulder Student</label>
+				<div class="col-sm-10" id="student_input">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student_choice" id="student_input_1" value="Yes">
+						<label class="form-check-label" for="student_input_1">Yes</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student_choice" id="student_input_2" value="No">
+						<label class="form-check-label" for="student_input_2">No</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label" for="student_status_input">Student Status</label>
+				<div class="col-sm-10" id="student_status_input">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student_status_grad_choice" id="student_status_grad_choice_1" value="Undergraduate">
+						<label class="form-check-label" for="student_status_grad_choice_1">Undergraduate</label>
+					</div>
+					<select class="form-control" name="student_status_field">
+						<option selected>Pick an Option</option>
+						<option value="Freshman">Freshman</option>
+						<option value="Sophomore">Sophomore</option>
+						<option value="Junior">Junior</option>
+						<option value="Senior">Senior</option> 
+					</select>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student_status_grad_choice" id="student_status_grad_choice_2" value="Graduate">
+						<label class="form-check-label" for="student_status_grad_choice_2">Graduate</label>
+					</div>
+					<select class="form-control" name="student_status_field">
+						<option selected>Pick an Option</option>
+						<option value="MA">MA</option>
+						<option value="MBA">MBA</option>
+						<option value="PHD">PHD</option>
+					</select>
+				</div>
 			</div>
 			<input type="submit" value="submit" class="btn btn-primary btn-block">
 		</form>
